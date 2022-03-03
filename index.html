@@ -19,8 +19,8 @@
         <p class="lead"> Encuentra tu SuperHero!</p>
     </header>
     <section>
-        <form id="hero-formulario">
-            <div class="row w-50 m-auto">
+        <form id="hero-formulario" class="w-50 m-auto my-3">
+            <div class="row">
                 <div class="col-12 col-sm-6">
                     <label>Ingresa el nombre del SuperHero a buscar: </label>
                 </div>
@@ -31,27 +31,28 @@
             <button type="submit" class="btn btn-dark mx-auto d-block my-3">Consultar</button>
         </form>
     </section>
+    <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col-md-6 col-sm-12">
+
             <div class="card">
+                <div id="hero-imagen" class="card-img-top"></div>
                 <div class="card-body">
-                    <h1 id="hero-nombre"></h1>
-                    <h1 id="hero-bando"></h1>
-                    <div id="hero-imagen"></div>
-                </div>
-                <div class="card-header">
+                    <h5 id="hero-nombre" class="card-title"></h5>
+                   
                     <table class="table" id="hero-tabla"></table>
                 </div>
+            </div>
 
-            </div>
-            <div class="row w-50 m-auto">
-                <div class="col-12 col-sm-6">
-                    <div style="height: 300px; width: auto;" id="estadisticas"></div>
-                </div>
-                <div class="col-12 col-sm-6">
-                </div>
-            </div>
+
         </div>
+
+        <div class="col-md-6 col-sm-12">
+            <div style="height: 300px; width: auto;" id="estadisticas"></div>
+        </div>
+
+
+    </div>
     </div>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="assets/js/script.js"></script>
